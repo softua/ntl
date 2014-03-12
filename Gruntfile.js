@@ -114,7 +114,7 @@ module.exports = function (grunt) {
 		'copy',
 		'jade',
 		'stylus',
-		'imagemin',
+		/*'imagemin',*/
 		'watch'
 	]);
 };

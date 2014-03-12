@@ -1,0 +1,139 @@
+include partials/head
+body
+	.wrapper-layout
+		include partials/header
+
+		section.content
+			section.products
+				h1.title Название категории
+				ul.products__list
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/1.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/2.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/3.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/4.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/5.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/6.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/7.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/8.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+					li.products__list__item
+						h1.products__list__item__title Название товара
+						.products__list__item__ph
+							img.products__list__item__foto(src='img/products/9.png', alt='Фото товара', title='Название товара')
+						p.products__list__item__description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a quam vitae enim lobortis
+						span.products__list__item__price.-padding Цена:
+						span.products__list__item__price 100,00руб.
+						a.products__list__item__href Далее...
+			sectin.sidebar
+				section.cart
+					h1.title.-cart Ваша корзина:
+					h2.cart__title Выбрано:
+					ol.cart__list
+						li.cart__list__item
+							span Название товара 1
+							span 1шт.
+							span ХХ.00руб
+						li.cart__list__item
+							span Название товара 2
+							span 10шт.
+							span ХХ.00руб
+						li.cart__list__item
+							span Длинное название нового товара
+							span 111шт.
+							span ХХХХХХ.00руб
+					h3.cart__total-price Общая сумма:
+						span ХХХ XXX.00руб.
+					a.cart__order(href='#', title='Оформление заказа') Перейти к оформлению заказа
+				section.baner
+					img(src='img/baner.jpg')
+				section.stat
+					img(src='img/stat.jpg')
+			menu.pagination
+				a(href='#', title='Первая страница') Первая страница 
+				a(href='#', title='') <<
+				a(href='#', title='') 1 
+				a(href='#', title='') 2 
+				a(href='#', title='') 3 
+				span ... 
+				a(href='#', title='') 12 
+				a(href='#', title='') 13 
+				a(href='#', title='') 14 
+				a(href='#', title='') >> 
+				a(href='#', title='Последняя страница') Последняя страница
+	footer.footer-layout
+		.copyright
+			a.copyright__logo(href='/'): img(src='img/logo-litle.png')
+			p.copyright__text Название компании © 2013г.
+		.contacts
+			h1.contacts__title Контакты:
+			p.contacts__data Тел.: +7 (495) 645-6405,<br>645-6502<br>Факс: +7 (495) 637-2746<br>E-mail: sales@rian.ru
+		.socials
+			h1.socials__title Мы в социальных сетях:
+			a(href='#'): img(src='img/fb.png')
+			a(href='#'): img(src='img/tw.png')
+			a(href='#'): img(src='img/vk.png')
+			a(href='#'): img(src='img/soc.png')
+			a(href='#'): img(src='img/ok.png')
+		menu.menu
+			li: a.menu__item(href='#') О компании
+			li: a.menu__item(href='#') Миссия
+			li: a.menu__item(href='#') Продукция
+			li: a.menu__item(href='#') Интернет магазин
+			li: a.menu__item(href='#') Доставка
+			li: a.menu__item(href='#') Оплата
+	include partials/scripts

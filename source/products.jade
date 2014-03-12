@@ -1,0 +1,45 @@
+include partials/head
+body
+	.wrapper-layout
+		include partials/header
+
+		section.content
+			section.main-foto
+				h1.main-foto__title Физическое, духовное и финансовое здоровье - как к этому прийти?
+			section.top-categories.-products
+				h1.title Продукция
+				ul.top-categories__list
+					li.top-categories__list__item
+						img.top-categories__list__item__img(src='img/categories/1.png', alt='Здоровое питание')
+						p.top-categories__list__item__description Здоровое питание
+					li.top-categories__list__item
+						img.top-categories__list__item__img(src='img/categories/2.png', alt='Оздоровительная косметика')
+						p.top-categories__list__item__description Лечебная косметика Сапропели
+					li.top-categories__list__item
+						img.top-categories__list__item__img(src='img/categories/3.png', alt='Приборы для здоровья')
+						p.top-categories__list__item__description Лазерная акупунктурная ручка
+					li.top-categories__list__item
+						img.top-categories__list__item__img(src='img/categories/4.png', alt='Технологии здорового образа жизни и отдых')
+						p.top-categories__list__item__description Кефирные закваски
+	footer.footer-layout
+		.copyright
+			a.copyright__logo(href='/'): img(src='img/logo-litle.png')
+			p.copyright__text Название компании © 2013г.
+		.contacts
+			h1.contacts__title Контакты:
+			p.contacts__data Тел.: +7 (495) 645-6405,<br>645-6502<br>Факс: +7 (495) 637-2746<br>E-mail: sales@rian.ru
+		.socials
+			h1.socials__title Мы в социальных сетях:
+			a(href='#'): img(src='img/fb.png')
+			a(href='#'): img(src='img/tw.png')
+			a(href='#'): img(src='img/vk.png')
+			a(href='#'): img(src='img/soc.png')
+			a(href='#'): img(src='img/ok.png')
+		menu.menu
+			li: a.menu__item(href='#') О компании
+			li: a.menu__item(href='#') Миссия
+			li: a.menu__item(href='#') Продукция
+			li: a.menu__item(href='#') Интернет магазин
+			li: a.menu__item(href='#') Доставка
+			li: a.menu__item(href='#') Оплата
+	include partials/scripts

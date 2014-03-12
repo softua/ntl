@@ -1,5 +1,69 @@
 include partials/head
 body
-	include partials/header
-	include partials/content
+	.wrapper-layout
+		include partials/header
+
+		section.content
+			section.main-foto
+				h1.main-foto__title Физическое, духовное и финансовое здоровье - как к этому прийти?
+			section.top-categories
+				ul.top-categories__list
+					li.top-categories__list__item
+						h1.top-categories__list__item__title Здоровое питание
+						img.top-categories__list__item__img(src='img/categories/1.png', alt='Здоровое питание')
+						p.top-categories__list__item__description Здоровое питание
+					li.top-categories__list__item
+						h1.top-categories__list__item__title Оздоровительная косметика
+						img.top-categories__list__item__img(src='img/categories/2.png', alt='Оздоровительная косметика')
+						p.top-categories__list__item__description Лечебная косметика Сапропели
+					li.top-categories__list__item
+						h1.top-categories__list__item__title Приборы для здоровья
+						img.top-categories__list__item__img(src='img/categories/3.png', alt='Приборы для здоровья')
+						p.top-categories__list__item__description Лазерная акупунктурная ручка
+					li.top-categories__list__item
+						h1.top-categories__list__item__title Технологии здорового образа жизни и отдых
+						img.top-categories__list__item__img(src='img/categories/4.png', alt='Технологии здорового образа жизни и отдых')
+						p.top-categories__list__item__description Кефирные закваски
+			section.about
+				section.about__info
+					h1.title О компании
+					img(src='img/about/1.jpg', alt='Фото из редактора')
+					h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					p lam mollis sit amet velit vitae gravida. Integer fermentum tellus in ligula sagittis gravida.<br><br>Pellentesque non mauris quis magna porttitor sollicitudin. Mauris sit amet est in turpis aliquam vestibulum in ac ligula. Pellentesque non nibh aliquet, congue est id, molestie nibh. Mauris facilisis, augue vel porttitor ullamcorper, enim libero fringilla nisl, vitae mattis nisl diam quis felis.<br><br>Ut quis fringilla ante. Class aptent taciti sociosqu. Donec a erat accumsan eros facilisis semper non convallis odio. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed vehicula urna purus, ac ornare sem consectetur et. Vestibulum tellus risus, facilisis non metus sed, sodales placerat ipsum.<br><br>Proin et augue ultrices, molestie ligula et, sollicitudin quam. Cras sodales malesuada scelerisque. Duis vulputate felis sed tortor faucibus, vel interdum ante egestas. Aliquam sollicitudin velit sed porttitor semper. Aenean tincidunt, lorem a pellentesque ultrices, velit nulla molestie dolor, a commodo velit
+					a(href='#', title='Читать дальше') Далее...
+				section.about__news
+					h1.title Новости
+					ul.about__news__list
+						li.about__news__list__item
+							iframe(width='225', height="150", src="//www.youtube.com/embed/hS4yR90Yl1c", frameborder="0", allowfullscreen)
+							span.about__news__list__item__date 5.11.2013 
+							span.about__news__list__item__title Ученые назвали продукты, которые помогают поумнеть
+							p.about__news__list__item__short-text Американские ученые опубликовали рейтинг продуктов, которые, по их мнению, стимулируют работу мозга
+							a.about__news__list__item__href(href='#', title='Читать новость') Далее...
+						li.about__news__list__item
+							span.about__news__list__item__date 13.11.2013 
+							span.about__news__list__item__title Употребление красного мяса увеличивает риск диабета
+							p.about__news__list__item__short-text На просторах интернета появился доклад ученых из Сингапура, в нем сообщалось про вред чрезмерного употребления красного мяса, которое приводит к повышенному риску развития сахарного диабета
+							a.about__news__list__item__href(href='#', title='Читать новость') Далее...
+	footer.footer-layout
+		.copyright
+			a.copyright__logo(href='/'): img(src='img/logo-litle.png')
+			p.copyright__text Название компании © 2013г.
+		.contacts
+			h1.contacts__title Контакты:
+			p.contacts__data Тел.: +7 (495) 645-6405,<br>645-6502<br>Факс: +7 (495) 637-2746<br>E-mail: sales@rian.ru
+		.socials
+			h1.socials__title Мы в социальных сетях:
+			a(href='#'): img(src='img/fb.png')
+			a(href='#'): img(src='img/tw.png')
+			a(href='#'): img(src='img/vk.png')
+			a(href='#'): img(src='img/soc.png')
+			a(href='#'): img(src='img/ok.png')
+		menu.menu
+			li: a.menu__item(href='#') О компании
+			li: a.menu__item(href='#') Миссия
+			li: a.menu__item(href='#') Продукция
+			li: a.menu__item(href='#') Интернет магазин
+			li: a.menu__item(href='#') Доставка
+			li: a.menu__item(href='#') Оплата
 	include partials/scripts

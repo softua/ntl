@@ -1,20 +1,441 @@
-@import 'nib'
+@import 'reset'
+//---------------------------------------------------------------------------
+body
+	background #a1d1b9 url('../img/bg.png') no-repeat top center
+	padding-top 20px
+	font-family "Verdana"
 
-/*===== CSS Reset =====start*/
-global-reset()
-nested-reset()
-reset-font()
-reset-box-model()
-reset-body()
-reset-table()
-reset-table-cell()
-reset-html5()
-/*===== CSS Reset =====end*/
+.about
+	margin-top 20px
+	clearfix()
 
-/*==== Common =====start*/
-.container
-	width 50%
+	&__info
+		float left
+		width 715px
+		margin 0 20px 0 0
+		clearfix()
+
+		&.-about
+			width 100%
+			margin-bottom 20px
+
+		a
+			color #333
+			font-size 14px
+			font-weight bold
+			float right
+			text-decoration none
+			margin 10px 0
+
+		img
+			float left
+			margin 0 20px 20px 0
+		h2
+			color #333
+			font-size 16px
+			font-weight bold
+			margin-bottom 10px
+
+		p
+			color #333
+			font-size 16px
+			text-align justify
+
+
+	&__news
+		float left
+		width 225px
+		margin 0
+
+		&__list
+			&__item
+				margin-bottom 20px
+				clearfix()
+
+				&:last-child
+					margin 0
+
+				&__date
+					color #336565
+					font-size 12px
+					font-weight bold
+				
+				&__title
+					color #333333
+					font-size 12px
+					font-weight bold
+
+				&__short-text
+					color #333333
+					font-size 12px
+					line-height 1.2em
+				
+				&__href
+					float right
+					text-decoration none
+					color #333333
+					font-size 12px
+					font-weight bold
+					margin 5px 0
+
+					&:hover
+						text-decoration underline
+
+.baner
+	text-align center
+	margin 20px 0 20px 0
+
+.cart
+	
+	&__title
+		color #214349
+		font-size 14px
+		margin-bottom 10px
+	
+	&__list
+		list-style decimal inside
+
+		&__item
+			color #214349
+			font-size 11px
+			margin-bottom 5px
+
+			span
+				margin 0 2px
+
+	&__total-price
+		color #214349
+		font-size 11px
+		margin 20px 0
+		relative()
+
+		span
+			absolute right
+
+	&__order
+		display block
+		border-radius 10px / 7px
+		background-color #97bfa7
+		color #214349
+		font-size 11px
+		padding 5px 0
+		margin 0 auto
+		text-align center
+		text-decoration none
+
+
+.contacts
+	float left
+	width 225px
+	margin 30px 20px 0 0
+	border 1px solid rgba(0,0,0,0)
+	padding 0 0 0 50px
+
+	&__title
+		color #fefefe
+		font-size 14px
+		margin-bottom 10px
+
+	&__data
+		color #fff
+		font-size 10px
+		line-height 2em
+
+.content
+	clearfix()
+
+.copyright
+	width 225px
+	float left
+	border 1px solid rgba(0,0,0,0)
+	margin 30px 20px 0 0
+
+	&__logo
+		display block
+		margin-bottom 10px
+	
+	&__text
+		color #fff
+		font-size 14px
+
+
+.footer-layout
+	width 960px
+	padding 0 20px 20px 20px
+	margin -20px auto 0 auto
+	background url(../img/bg-footer.jpg) no-repeat top
+	z-index 50
+	clearfix()
+
+.header-layout
+	width 100%
+	border 1px solid rgba(0, 0, 0, 0)
+	margin 0 0 20px 0
+	position relative
+	background url(../img/header-bg-3.png) no-repeat right 103px, url(../img/header-bg-2.png) no-repeat 250px 43px, url(../img/header-bg-4.png) no-repeat right 80px, url(../img/header-bg-1.png) no-repeat right 3px
+	clearfix()
+
+	.logo
+		margin 11px 0 0 18px
+		float left
+
+	.slogan
+		float left
+		margin 88px 0 0 17px
+
+	.main-menu
+		margin-top 130px
+
+.logo
+	display block
+	cursor pointer
+
+.main-foto
+	width 100%
+	height 252px
+	background url(../img/main-img.png) no-repeat center
+	border 1px solid rgba(0, 0, 0, 0)
+
+	&__title
+		color #214349
+		font-size 24px
+		margin 40px 100px 0 540px
+		line-height 1.15em
+		letter-spacing 0.02em
+
+
+
+.main-menu
+	clear both
+	clearfix()
+	width 100%
+	background #356872
+	border-radius 10px
+
+	&__item
+		float left
+		list-style none
+
+		&:last-child > .main-menu__href
+			border none
+
+	&__href
+		display block
+		text-decoration none
+		color #fff
+		font-size 14px
+		height 100%
+		padding 12px
+		border-right 1px solid #fff
+
+.menu
+	float left
+	width 164px
+	margin 30px 0 0 0
+	border 1px solid rgba(0,0,0,0)
+	list-style none
+
+	&__item
+		color #fff
+		font-size 14px
+		text-decoration none
+		line-height 1.3em
+
+.pagination
+	clear both
+	color #333
+	font-size 11px
+	margin 20px 0
+
+	a
+		text-decoration none
+		color inherit
+
+.products
+	width 715px
+	margin-right 20px
+	float left
+
+	&__list
+		clearfix()
+
+		&__item
+			width 225px
+			min-height 280px
+			border-radius 10px
+			background-clip padding-box
+			background #20434a
+			box-shadow 0 0 5px rgba(0,0,0,.75)
+			relative()
+			padding-bottom 5px
+			float left
+			margin 0 20px 20px 0
+
+			&:nth-child(3n)
+				margin-right 0
+
+			&__title
+				absolute top
+				color #214349
+				font-size 18px
+				font-weight bold
+				width 225px
+				min-height 44px
+				background #fefefe
+				opacity 0.6
+				text-align center
+				border-radius 10px 10px 0 0
+				padding-top 10px
+
+			&__ph
+				background #fff
+				border-radius 10px
+				height 172px
+
+			&__foto
+				display block
+				margin 0 auto
+			
+			&__description
+				text-align justify
+				color #fff
+				font-size 12px
+				margin 20px 10px 20px 10px
+
+			&__price
+				color #fff
+				font-size 14px
+
+				&.-padding
+					margin 0 10px
+
+			&__href
+				height 20px
+				padding 2px 8px
+				border-radius 9px / 10px
+				background-clip padding-box
+				background-color #97bfa7
+				color #333
+				font-size 12px
+				font-weight bold
+				cursor pointer
+				margin 0 0 0 5px
+
+.sidebar
+	width 225px
+	float left
+	margin 0
+
+.slogan
+	color #356772
+	font-size 18px
+	font-weight bold
+	font-style italic
+
+.socials
+	float left
+	width 225px
+	margin-right 20px
+	margin 30px 20px 0 0
+	border 1px solid rgba(0,0,0,0)
+
+	&__title
+		color #fefefe
+		font-size 14px
+		margin-bottom 20px
+
+.stat
+	text-align center
+	margin 20px 0 20px 0
+
+.title
+	color #333
+	font-size 18px
+	font-weight bold
+	text-transform uppercase
+	margin-bottom 10px
+
+	&.-cart
+		color #214349
+
+
+
+.top-categories
+	margin-top 20px
+
+	&.-products
+		padding-bottom 20px
+
+	&__list
+		clearfix()
+
+		&__item
+			display block
+			float left
+			width 225px
+			height 280px
+			border-radius 10px
+			background-clip padding-box
+			background-color #20434a
+			margin 0 20px 0 0
+			relative()
+
+			&:last-child
+				margin 0
+
+			&__title
+				color #214349
+				font-size 16px
+				font-weight bold
+				background #fff
+				opacity 0.6
+				text-align center
+				padding 10px 0
+				text-transform uppercase
+				border-radius 10px 10px 0 0
+				position absolute
+				top 0
+				left 0
+				width 100%
+
+			&__description
+				color #fefefe
+				font-size 18px
+				text-align center
+				margin 25px 0 0 0
+
+
+
+	
+
+.user-block
+	position absolute
+	right 0
+	top -1px
+	background #356872
+	border-radius 0 0 10px 10px
+	padding 8px
+	clearfix()
+
+.user-block__href
+	display block
+	float left
+	color #fff
+	font-size 12px
+	text-decoration none
+	border-right 1px solid #fff
+	padding 0 5px
+
+	&:last-child
+		padding-right 0
+		border none
+
+.wrapper-layout
+	width 960px
 	margin 0 auto
-	background url(../img/indicator.gif) no-repeat center
-	min-height 100px
-/*==== Common =====end*/
+	background #fff
+	border-radius 10px
+	padding 0 20px 0 20px
+	box-shadow 0 3px 10px 2px rgba(0, 0, 0, 0.6)
+	position relative
+	z-index 100
